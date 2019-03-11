@@ -1,0 +1,231 @@
+body {
+    margin: 0;
+    background-color: #ebebeb;
+}
+
+@font-face {
+    font-family: 'Proxima Nova Thin Italic';
+    src: url('ProximaNova-ThinIt.eot');
+    src: url('ProximaNova-ThinIt.eot?#iefix') format('embedded-opentype'), url('ProximaNova-ThinIt.woff') format('woff'), url('ProximaNova-ThinIt.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.top-menu {
+    position: fixed;
+    width: 100%;
+    background: rgba(34, 34, 34, .2);
+}
+
+.top-menu:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.navbar-logo {
+    display: inline-block;
+}
+
+.menu-main {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    float: right;
+}
+
+.menu-main li {
+    display: inline-block;
+}
+
+.menu-main a {
+    text-decoration: none;
+    display: block;
+    position: relative;
+    padding-left: 25px;
+    padding-right: 25px;
+    font-size: 24px;
+    letter-spacing: 2px;
+    font-family: 'Proxima Nova Thin Italic';
+    font-weight: bold;
+    color: #ffffff;
+    transition: .3s linear;
+}
+
+.menu-main a:hover:before {
+    opacity: 1;
+}
+
+@media (max-width: 660px) {
+    .menu-main {
+        float: none;
+        padding-top: 20px;
+    }
+    .top-menu {
+        text-align: center;
+        padding: 20px 0 0 0;
+    }
+    .menu-main a {
+        padding: 0 10px;
+    }
+}
+
+@media (max-width: 600px) {
+    .menu-main li {
+        display: block;
+    }
+}
+
+/*header*/
+
+.header {
+    background: url('./image/DeathtoStock_Wired7.jpg') no-repeat center;
+    background-size: cover;
+    height: 1070px;
+    /* opacity: 0.5; */
+    text-align: center;
+}
+
+div.intro-text {
+    padding-top: 220px;
+    padding-bottom: 600px;
+}
+
+@media (min-width: 768px) {
+    div .intro-text {
+        padding-top: 300px;
+        padding-bottom: 200px;
+    }
+}
+
+header .intro-text .intro-lead-in {
+    font-family: "Proxima Nova";
+    font-style: italic;
+    font-size: 72px;
+    line-height: 60.22px;
+    margin-bottom: 25px;
+    color: #fefefb;
+    text-transform: uppercase;
+}
+
+/* @media (min-width: 768px) {
+    header .intro-text .intro-lead-in {
+        font-family: "Proxima Nova";
+        font-style: italic;
+        font-size: 40px;
+        line-height: 40px;
+        margin-bottom: 25px;
+    }
+} */
+
+.intro-heading {
+    color: #fefdfd;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 30px;
+    font-style: italic;
+}
+
+/*About us*/
+
+.info {
+    height: 800px;
+    background-color: #ebebeb;
+}
+
+.mollis {
+    width: 790px;
+    height: 557px;
+    text-align: center;
+    color: #665f60;
+    font-family: "PT Sans";
+    font-size: 20px;
+    font-weight: 400;
+    /* font-weight: 700; */
+    font-style: italic;
+}
+
+/*recent work*/
+
+.recent {
+    background: url('./image/rw.jpg') no-repeat center;
+    background-size: cover;
+    height: 1000px;
+}
+
+/*team*/
+
+div .team {
+    display: inline;
+}
+
+.team-item {
+    text-align: center;
+}
+
+.team-item h3 {
+    font-size: 16px;
+    font-weight: 350px;
+}
+
+.team-item .team-location {
+    font-size: 13px;
+    margin-bottom: 20px;
+}
+
+.team-item .team-location {
+    font-size: 12px;
+    margin-bottom: 20px;
+}
+
+.team-item .team-position {
+    color: #000;
+    font-size: 12px;
+}
+
+.team-item p {
+    font-size: 13px;
+    /* font-weight: 300px; */
+    padding: 5px 10px 20px 10px;
+}
+
+/*footer*/
+
+#lab_social_icon_footer {
+    padding: 40px 0;
+    background-color: #9f9acf;
+}
+
+#lab_social_icon_footer a {
+    color: #333;
+}
+
+#lab_social_icon_footer .social:hover {
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+
+#lab_social_icon_footer .social {
+    -webkit-transform: scale(0.8);
+    -moz-transform: scale(0.8);
+    -o-transform: scale(0.8);
+    -webkit-transition-duration: 0.5s;
+    -moz-transition-duration: 0.5s;
+    -o-transition-duration: 0.5s;
+}
+
+#lab_social_icon_footer #social-fb:hover {
+    color: #3B5998;
+}
+
+#lab_social_icon_footer #social-tw:hover {
+    color: #4099FF;
+}
+
+#lab_social_icon_footer #social-gp:hover {
+    color: #d34836;
+}
+
+#lab_social_icon_footer #social-em:hover {
+    color: #f39c12;
+}
